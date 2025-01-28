@@ -7,8 +7,9 @@
 % withoutsidebar
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
+\usepackage{amsmath}
 \usepackage[margin=1cm, a4paper]{geometry}
-
+\usepackage{makecell}
 
 %------------------------------------------------------------------ Variablen
 
@@ -24,7 +25,6 @@
 
 \pagestyle{empty}
 \begin{document}
-
 
 \thispagestyle{empty}
 %-------------------------------------------------------------
@@ -48,7 +48,6 @@
 
 % 0.9,0.9,0.9 -- 0.8,0.8,0.8
 
-
 \footnotesize
 {\setasidefontcolour
     \flushright
@@ -56,34 +55,31 @@
         \roundpic{angelo.jpg}
     \end{center}
 
-    \bg{cvgreen}{white}{Biografia}\\[0.5em]
-
-    \bigskip
-
     \bg{cvgreen}{white}{Info} \\[0.5em]
     {\small
-        \textbf{Angelo Filaseta}\\
+    \textbf{Angelo Filaseta}\\
     }
     \vspace{0.5em}
     {\footnotesize
-        \icon{\faBirthdayCake}{cvgreen}{} 10 Dicembre 1998\\
-        \icon{\faEnvelopeO}{cvgreen}{} Via Chiaramonti 35 \\
-        \icon{\faMapMarker}{cvgreen}{} Cesena (FC) \\
-        \icon{\faPhone}{cvgreen}{} +39 327 7573750 \\
-        \icon{\faAt}{cvgreen}{} \protect\url{filaseta.angelo@gmail.com}
+    \icon{\faBirthdayCake}{cvgreen}{} 10 Dicembre 1998\\
+    \icon{\faEnvelopeO}{cvgreen}{} Via Chiaramonti 35 \\
+    \icon{\faMapMarker}{cvgreen}{} Cesena (FC) \\
+    \icon{\faPhone}{cvgreen}{} +39 327 7573750 \\
+    \icon{\faAt}{cvgreen}{} \protect\url{filaseta.angelo@gmail.com}
+    \icon{\faCar}{cvgreen}{} \textit{AM, B}
     }
+    \bigskip
 
+    \bg{cvgreen}{white}{Biografia}\\[0.5em]
+    Sono da sempre stato affascinato dalla tecnologia e la logica\\
+    Ho partecipato alla creazione e alla gestione di progetti in numerosi ambiti,
+    utilizzando una vasta gamma di tecnologie e linguaggi di programmazione.\\
+    Durante la mia permanenza in Università ho anche pubblicatoqualche articolo scientifico.\\
     \bigskip
 
     \bg{cvgreen}{white}{Area di Specializzazione} \\[0.5em]
+    Software Architecture ~•~ DevOps ~•~ Design Pattern ~•~ CI \& CD ~•~ Strong Typing ~•~ Object Oriented Programming (OOP) ~•~ Functional Programming ~•~
 
-    Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
-
-    \bigskip
-
-    \bg{cvgreen}{white}{Interests}\\[0.5em]
-
-    \lorem
     \bigskip
 
     \bg{cvgreen}{white}{Tecnologie di punta}\\[0.5em]
@@ -97,8 +93,14 @@
     {\footnotesize
     \includegraphics[width=25px]{react}
     }
-    \vspace{4em}
+    \bigskip
 
+    \bg{cvgreen}{white}{Lingue}\\[0.5em]
+    \textbf{Italiano}: Madrelingua\\
+    \\
+    \textbf{Inglese}: B2
+
+    \vspace{4em}
     \infobubble{\faGithub}{cvgreen}{white}{AngeloFilaseta}
     \infobubble{\faLinkedin}{cvgreen}{white}{angelofilaseta}
     \phantom{turn the page}
@@ -109,59 +111,52 @@
 \switchcolumn
 
 \small
-\section*{Short Resumé}
+\section*{Esperienze Lavorative}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2023--2025}{Assegnista di Ricerca - Università di Bologna}{CESENA (FC)}{Emilia Romagna - Italia \color{cvred}}{
-        Ho partecipato a un progetto di ricerca mirato allo
+    \cvevent{\makecell{$\text{2023}\\ \Downarrow \\\text{2025}$}}
+    {\normalsize{Assegnista di Ricerca - Università di Bologna}}{CESENA (FC)}{Emilia Romagna - Italia \color{cvred}}
+    {Nel contesto del progetto \textit{WOOD 4.0}, la mia ricerca si è basata sullo
         \textbf{studio, progettazione e validazione di un prototipo di piattaforma digitale per l'aggiornamento remoto del software su macchine industriali.}
-    }{research.png}
+    }{lens.png}
     \\
-    \cvevent{2023--2025}{Professore a Contratto - Università di Bologna{\newline}PROGETTAZIONE E SVILUPPO DEL SOFTWARE}{CESENA (FC)}{Emilia Romagna - Italia \color{cvred}}{
-        Ho tenuto lezioni e laboratori sul paradigma di programmazione \textbf{Object-Oriented}, utilizzando \textbf{Java} come linguaggio di riferimento.
+    \cvevent{\makecell{$\text{2023}\\ \Downarrow \\\text{2025}$}
+    }{\normalsize{Professore a Contratto - Università di Bologna}{\newline}\footnotesize PROGETTAZIONE E SVILUPPO DEL SOFTWARE}{CESENA (FC)}{Emilia Romagna - Italia \color{cvred}}
+    {Lezioni e laboratori sul paradigma di programmazione \textbf{Object-Oriented}, utilizzando \textbf{Java} come linguaggio di riferimento.
         Ulteriori approfondimenti sono stati dedicati ai principali \textbf{pattern di progettazione}, al ciclo di vita del software e alle tecniche di sviluppo.
     }{teaching.png}
     \\
-    \cvevent{2023}{Full Stack Developer - SCM Group SPA}{Rimini (RN)}{Emilia Romagna - Italia \color{cvred}}{
-        Ho passato un breve periodo in azienda,
-        effettuando un'analisi di dominio approfondita per raccogliere dati e valutare i requisiti tecnici e operativi relativi al
-        progetto di ricerca che avrei iniziato nei mesi successivi.
-    }{puzzle.png}
+    \cvevent{2023}{\normalsize{Full Stack Developer - SCM Group SPA}}{Rimini (RN)}{Emilia Romagna - Italia \color{cvred}}
+    {Analisi di dominio, raccolta di dati e valutazione di requisiti tecnici relativi al progetto di ricerca \textit{WOOD 4.0}.}
+    {puzzle.png}
 \end{tabular}
-\vspace{1em}
+
 
 \section*{Titoli di Studio}
 \begin{tabular}{r | p{0.6\textwidth} c}
-    \cvdegree{110L}{
-        Laurea Magistrale in Ingegneria e Scienze Informatiche
-    }{
+    \cvdegree{110L}{\normalsize{Laurea Magistrale in Ingegneria e Scienze Informatiche}}{
         LM-32
     }{
         Università di Bologna
     }{
-        Cesena (FC) - Emilia Romagna
+        Cesena (FC) - Emilia Romagna - Italia
     }{
         degree-cap.png
     }\\
-    \cvdegree{97}{
-        Laurea Triennale in Ingegneria e Scienze Informatiche
-    }{
+    \cvdegree{97}{\normalsize{Laurea Triennale in Ingegneria e Scienze Informatiche}}{
         L-31
     }{
         Università di Bologna
-    }{
-        Cesena (FC) - Emilia Romagna
+    }{Cesena (FC) - Emilia Romagna - Italia
     }{
         degree-cap.png
     }\\
-    \cvdegree{100}{
-        Maturità Tecnica (Informatica)
-    }{
+    \cvdegree{100}{\normalsize{Maturità Tecnica (Informatica)}}{
         Diploma
     }{
         Istituto Tecnico Industriale ~•~ \emph{Don Luigi Orione}
     }{
-        Fano (PU) - Marche
+        Fano (PU) - Marche - Italia
     }{
         medal.png
     }
@@ -175,15 +170,9 @@
 
 \vspace{3em}
 
-\begin{minipage}[t]{0.3\textwidth}
-    \section*{Languages}
-    \begin{tabular}{l | ll}
-        \textbf{Italian} & C2 & {\phantom{x}\footnotesize Madrelingua} \\
-        \textbf{Inglese} & B2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
-    \end{tabular}
-\end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
-    \section*{Programming}
+    \section*{Tecnologie}
+    Ho utilizzato una vasta gamma di tecnologie, qui riporto solo alcune delle principali:
     \begin{tabular}{r @{\hspace{0.5em}}l}
         \bg{skilllabelcolour}{white}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
         \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
